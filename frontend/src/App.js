@@ -1,10 +1,11 @@
 import * as React from 'react';
-
+import Home from './pages/home';
 function App() {
   return (
-    <div className="App">
-      <h1>Robot Market</h1>
-      {/*Add your code here*/}
+    <div className='App'>
+      <main role='main'>
+        <Home />
+      </main>
     </div>
   );
 }
