@@ -15,6 +15,14 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/morphosisteam/robot-market#readme",
   "dependencies": {
-    "dayjs": "^1.10.7"
+    "dayjs": "^1.10.7",
+    "node-sass": "^6.0.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.1.4",
+    "styled-components": "^5.3.3"
   }
 }
