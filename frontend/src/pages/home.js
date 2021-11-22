@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { selectorItems } from '../redux/item/selector';
 import { getAllItem } from '../redux/item/action';
+import CartModal from '../components/organisms/cartModal';
 
 const Home = ({ items, getAllItem }) => {
   useEffect(() => {
@@ -18,6 +19,8 @@ const Home = ({ items, getAllItem }) => {
       <div className='card__container'>
         {items.length > 0 && <CardList dataList={items} />}
       </div>
+
+      <CartModal />
     </>
   );
 };

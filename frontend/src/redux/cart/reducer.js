@@ -2,7 +2,7 @@ import { CartActionTypes } from './type';
 import { addItemToCart, removeItemFromCart, removeItem } from './utils';
 
 const INIT_STATE = {
-  hidden: true,
+  hidden: false,
   cartItems: [],
 };
 

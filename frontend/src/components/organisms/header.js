@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectCartHidden } from '../../redux/cart/selectors';
 
-import CartDropdown from '../atoms/cartDropdown/card-dropdown';
 import CartIcon from '../atoms/cartIcon';
 import SearchInput from '../atoms/searchInput';
 import { getFilterItem } from '../../redux/item/action';
+import CartModal from './cartModal';
 
 const Header = ({ hidden, getFilterItem }) => {
   const [key, setKey] = useState('');
@@ -23,7 +23,7 @@ const Header = ({ hidden, getFilterItem }) => {
       <div className='header__cart'>
         <SearchInput value={key} onChange={onSearchChange} />
         <CartIcon />
-        {hidden ? null : <CartDropdown />}
+        {<CartModal check={hidden} />}
       </div>
     </div>
   );

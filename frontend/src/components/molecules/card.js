@@ -2,18 +2,9 @@ import React from 'react';
 import dayjs from 'dayjs';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/action';
-
+import priceFormatter from '../../utils/priceFormatter';
 const Card = ({ addItem, data }) => {
   const { name, image, price, stock, material, createdAt } = data;
-
-  var formatter = new Intl.NumberFormat('th-TH', {
-    style: 'currency',
-    currency: 'THB',
-
-    // These options are needed to round to whole numbers if that's what you want.
-    //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-    //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-  });
 
   return (
     <figure>
@@ -30,7 +21,7 @@ const Card = ({ addItem, data }) => {
             disabled={stock <= 0}
             onClick={() => addItem(data)}
           >
-            <span className='price'>{formatter.format(price)}</span>
+            <span className='price'>{priceFormatter(price)}</span>
             <span className='buy'>Get now</span>
           </button>
         </div>

@@ -27,7 +27,7 @@ main {
   /* styles for browsers larger than 960px; */
 
   .header {
-    width: 60%;
+    width: 70%;
     flex-direction: row;
   }
 }
@@ -35,7 +35,7 @@ main {
 @media only screen and (device-width: 760px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
   .header {
-    width: 70%;
+    width: 80%;
     flex-direction: row;
   }
 }
@@ -51,7 +51,7 @@ main {
   position: relative;
 
   input {
-    width: 100%;
+    width: 20rem;
     display: flex;
     padding: 0px;
     padding-left: 1rem;
