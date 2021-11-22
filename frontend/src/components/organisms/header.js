@@ -7,9 +7,13 @@ import CartDropdown from '../atoms/cartDropdown/card-dropdown';
 import CartIcon from '../atoms/cartIcon';
 const Header = ({ hidden }) => {
   return (
-    <div className='container mb-5 d-flex justify-content-between'>
-      <h1 className='font-weight-bold title'>Robot Market</h1>
-      <div className='row' style={{ position: 'relative' }}>
+    <div className='header'>
+      <h1 className='header__title'>Robot Market</h1>
+      <div className='header__cart'>
+        <input
+          placeholder='enter search keyword'
+          className='header__cart-search'
+        />
         <CartIcon />
         {hidden ? null : <CartDropdown />}
       </div>
