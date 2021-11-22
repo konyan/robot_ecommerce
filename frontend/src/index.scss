@@ -1,6 +1,6 @@
 /* line 1, src/assets/scss/theme.scss */
 body {
-  padding-top: 70px;
+  margin-top: 4rem;
 }
 
 /* line 2, src/assets/scss/theme.scss */
@@ -122,6 +122,7 @@ figure figcaption {
   height: 70%;
 }
 figure figcaption h3 {
+  font-size: 1.4rem;
   margin: 0 0 1.4rem;
   padding: 0;
 }
