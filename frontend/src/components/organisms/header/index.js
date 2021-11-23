@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { selectCartHidden } from '../../redux/cart/selectors';
+import { selectCartHidden } from '../../../redux/cart/selectors';
 
-import CartIcon from '../atoms/cartIcon';
-import SearchInput from '../atoms/searchInput';
-import { getFilterItem } from '../../redux/item/action';
-import CartModal from './cartModal';
+import CartIcon from '../../atoms/cartIcon';
+import SearchInput from '../../atoms/searchInput';
+import { getFilterItem } from '../../../redux/item/action';
+import CartModal from '../cartModal';
 
 const Header = ({ hidden, getFilterItem }) => {
   const [key, setKey] = useState('');

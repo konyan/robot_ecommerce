@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../molecules/card.js';
+import Card from '../../molecules/card.js';
 
 const CardList = ({ dataList }) => {
   return (
